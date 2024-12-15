@@ -328,6 +328,13 @@ a{
   position: relative;
   box-shadow: 0px 0px 40px #1f1f1f;
 }
+@media (max-width: 1300px) {
+  .project-card {
+    background-size: contain; /* Make the background image scale to fit */
+    background-position: center center; /* Ensure the background stays centered */
+    min-height: 300px; /* Adjust height for smaller screens */
+  }
+}
 .project-card::after {
   content: "";
   color: #fff;
@@ -383,11 +390,7 @@ a{
   font-weight: bold;
   line-height: 3rem;
 }
-@media (max-width: 768px) {
-  .project-heading {
-    font-size: 30px;  /* Smaller font size for smaller screens */
-  }
-}
+
 .project-sub-heading {
   font-size: 16px;
   width: 70%;
@@ -478,6 +481,7 @@ a{
     margin: 10px;
     gap: 60px;
   }
+  
   .project-card {
     width: 100%;
     height: 300px;
