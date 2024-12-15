@@ -321,7 +321,7 @@ a{
 
 .project-card {
   width: 90%;
-  height: 550px;
+  min-height: 550px;
   background-image: url(./projects/project1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -367,6 +367,7 @@ a{
   position: absolute;
   z-index: 5;
   transition: all 0.4s;
+  padding: 2vw
 }
 .project-content-left {
   left: 10%;
@@ -381,6 +382,11 @@ a{
   font-size: 50px;
   font-weight: bold;
   line-height: 3rem;
+}
+@media (max-width: 768px) {
+  .project-heading {
+    font-size: 30px;  /* Smaller font size for smaller screens */
+  }
 }
 .project-sub-heading {
   font-size: 16px;
